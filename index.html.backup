@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="DAODISEO AI Brain - Revolutionary 5-Layer Architecture for Conversational Real World Assets. 4-Day Methodology Implementation." />
+    <meta name="keywords" content="DAODISEO, AI Architecture, Real World Assets, BIM, Blockchain, DAO, 4-Day Methodology" />
+    <meta name="author" content="Maksim Yurchanka" />
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="DAODISEO AI Brain Architecture" />
+    <meta property="og:description" content="Revolutionary 5-Layer Architecture for Conversational Real World Assets" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="/og-image.png" />
+    
+    <!-- Twitter Card Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="DAODISEO AI Brain Architecture" />
+    <meta name="twitter:description" content="Revolutionary 5-Layer Architecture for Conversational Real World Assets" />
+    
+    <title>DAODISEO AI Brain Architecture - 4-Day Methodology</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

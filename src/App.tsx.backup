@@ -71,11 +71,11 @@ function App() {
             <div className="layer-number">2️⃣</div>
             <div className="layer-title">Business Layer</div>
             <div className="layer-description">
-              • 7 Stakeholder Intelligence Roles<br />
-              • Context-Aware AI Responses<br />
-              • Role-Based Information Delivery<br />
-              • Multi-Perspective Understanding<br />
-              • Customized Workflow Automation
+              • Real Estate Workflows<br />
+              • Stakeholder Management<br />
+              • Investment Decision Support<br />
+              • Risk Assessment & Mitigation<br />
+              • Performance Analytics
             </div>
           </div>
         </div>
@@ -223,9 +223,9 @@ function App() {
       </div>
       
       <div className="footer">
-        <div className="footer-title">🚀 From v0.1 to v1.0: 7-Stakeholder Intelligence Evolution</div>
-        <p>Start with MVP conversational RWA → Scale to enterprise platform with 7x specialized intelligence for every real estate professional</p>
-        <p><strong>Proven Methodology • Expert Collaboration • Multi-Stakeholder Intelligence • Revolutionary Results</strong></p>
+        <div className="footer-title">🚀 From v0.1 to v1.0: Expert-Validated Evolution Path</div>
+        <p>Start with MVP conversational RWA → Scale to enterprise platform with Pavel's advanced data architecture</p>
+        <p><strong>Proven Methodology • Expert Collaboration • Production-Grade Technology • Revolutionary Results</strong></p>
         <div className="collaboration-highlight">
           <strong>✅ Business Vision (Free Man) + Technical Excellence (Pavel) + 4-Day Execution (Maksim) = Legendary Platform</strong>
         </div>

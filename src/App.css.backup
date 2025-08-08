@@ -285,154 +285,6 @@ body {
   color: #28a745;
 }
 
-/* Stakeholder Intelligence Section */
-.stakeholder-intelligence-section {
-  background: rgba(69, 181, 209, 0.15);
-  border-radius: 15px;
-  padding: 30px;
-  margin: 30px 0;
-  border: 2px solid rgba(69, 181, 209, 0.3);
-}
-
-.stakeholder-title {
-  color: #45b7d1;
-  font-size: 1.8rem;
-  margin-bottom: 10px;
-  text-align: center;
-}
-
-.stakeholder-subtitle {
-  text-align: center;
-  font-size: 1.1rem;
-  opacity: 0.9;
-  margin-bottom: 30px;
-}
-
-.stakeholder-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 20px;
-  margin: 30px 0;
-}
-
-.stakeholder-item {
-  background: rgba(255, 255, 255, 0.1);
-  padding: 20px;
-  border-radius: 12px;
-  text-align: center;
-  transition: all 0.3s ease;
-  border: 2px solid transparent;
-}
-
-.stakeholder-item:hover {
-  transform: translateY(-3px);
-  background: rgba(255, 255, 255, 0.2);
-  border-color: rgba(255, 255, 255, 0.3);
-}
-
-.stakeholder-icon {
-  font-size: 2.5rem;
-  margin-bottom: 10px;
-}
-
-.stakeholder-item h4 {
-  font-size: 1.2rem;
-  margin-bottom: 10px;
-  color: #ffd700;
-}
-
-.stakeholder-need {
-  font-size: 0.9rem;
-  margin-bottom: 10px;
-  opacity: 0.8;
-  font-style: italic;
-}
-
-.stakeholder-example {
-  font-size: 0.85rem;
-  background: rgba(0, 0, 0, 0.3);
-  padding: 8px;
-  border-radius: 6px;
-  border-left: 3px solid #45b7d1;
-  font-family: 'Courier New', monospace;
-}
-
-/* Stakeholder Colors */
-.stakeholder-tenants:hover { border-color: #ff6b6b; }
-.stakeholder-brokers:hover { border-color: #4ecdc4; }
-.stakeholder-landlords:hover { border-color: #45b7d1; }
-.stakeholder-managers:hover { border-color: #96ceb4; }
-.stakeholder-mortgage:hover { border-color: #ffeaa7; }
-.stakeholder-appraisers:hover { border-color: #a29bfe; }
-.stakeholder-investors:hover { border-color: #fd79a8; }
-
-.intelligent-response-demo {
-  background: rgba(0, 0, 0, 0.2);
-  border-radius: 12px;
-  padding: 25px;
-  margin: 25px 0;
-}
-
-.demo-title {
-  color: #ffd700;
-  font-size: 1.3rem;
-  margin-bottom: 15px;
-  text-align: center;
-}
-
-.demo-scenario {
-  text-align: center;
-}
-
-.demo-question {
-  font-size: 1.2rem;
-  font-weight: bold;
-  margin-bottom: 20px;
-  padding: 10px;
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 8px;
-  border-left: 4px solid #45b7d1;
-}
-
-.demo-responses {
-  display: grid;
-  gap: 12px;
-  margin-top: 15px;
-}
-
-.demo-response {
-  padding: 12px;
-  border-radius: 8px;
-  text-align: left;
-  font-size: 0.9rem;
-  border-left: 4px solid;
-}
-
-.demo-response.investor {
-  background: rgba(253, 121, 168, 0.15);
-  border-left-color: #fd79a8;
-}
-
-.demo-response.manager {
-  background: rgba(150, 206, 180, 0.15);
-  border-left-color: #96ceb4;
-}
-
-.demo-response.broker {
-  background: rgba(78, 205, 196, 0.15);
-  border-left-color: #4ecdc4;
-}
-
-.stakeholder-value-proposition {
-  text-align: center;
-  margin-top: 25px;
-  padding: 15px;
-  background: rgba(69, 181, 209, 0.3);
-  border-radius: 10px;
-  color: #45b7d1;
-  font-size: 1.1rem;
-}
-
 /* Responsive Design */
 @media (max-width: 1200px) {
   .architecture-grid {
@@ -443,10 +295,6 @@ body {
   .expert-grid {
     grid-template-columns: 1fr;
     gap: 15px;
-  }
-  
-  .stakeholder-grid {
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   }
   
   .benefits {
@@ -473,32 +321,12 @@ body {
     gap: 10px;
   }
   
-  .stakeholder-grid {
-    grid-template-columns: 1fr;
-  }
-  
-  .demo-responses {
-    gap: 8px;
-  }
-  
-  .stakeholder-item {
-    padding: 15px;
-  }
-  
   .title {
     font-size: 2rem;
   }
   
   .subtitle {
     font-size: 1.2rem;
-  }
-  
-  .stakeholder-title {
-    font-size: 1.5rem;
-  }
-  
-  .stakeholder-subtitle {
-    font-size: 1rem;
   }
 }
 
