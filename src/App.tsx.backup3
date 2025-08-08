@@ -1,10 +1,7 @@
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
 import './App.css';
-import Dashboard from './Dashboard';
 
 function App() {
-  const [currentView, setCurrentView] = useState<'architecture' | 'dashboard'>('architecture');
-
   useEffect(() => {
     // Interactive elements for layers
     const layers = document.querySelectorAll('.layer');
@@ -45,11 +42,7 @@ function App() {
       });
       clearInterval(brainInterval);
     };
-  }, [currentView]);
-
-  if (currentView === 'dashboard') {
-    return <Dashboard />;
-  }
+  }, []);
 
   return (
     <div className="container">
@@ -57,22 +50,6 @@ function App() {
         <h1 className="title">🧠 DAODISEO AI BRAIN</h1>
         <p className="subtitle">Revolutionary 5-Layer Architecture for Conversational Real World Assets</p>
         <div className="methodology-badge">⚡ 4-Day Methodology Implementation</div>
-        
-        {/* Navigation */}
-        <div className="navigation">
-          <button 
-            className={`nav-btn ${currentView === 'architecture' ? 'active' : ''}`}
-            onClick={() => setCurrentView('architecture')}
-          >
-            🧠 Architecture
-          </button>
-          <button 
-            className={`nav-btn ${currentView === 'dashboard' ? 'active' : ''}`}
-            onClick={() => setCurrentView('dashboard')}
-          >
-            📊 Dashboard
-          </button>
-        </div>
       </div>
       
       <div className="architecture-grid">
@@ -195,10 +172,7 @@ function App() {
           </p>
           
           <div className="rwa-cta-buttons">
-            <button 
-              className="rwa-btn rwa-btn-primary"
-              onClick={() => setCurrentView('dashboard')}
-            >
+            <button className="rwa-btn rwa-btn-primary">
               📤 Upload & Start Building
             </button>
             <button className="rwa-btn rwa-btn-secondary">

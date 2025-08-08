@@ -1,10 +1,7 @@
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
 import './App.css';
-import Dashboard from './Dashboard';
 
 function App() {
-  const [currentView, setCurrentView] = useState<'architecture' | 'dashboard'>('architecture');
-
   useEffect(() => {
     // Interactive elements for layers
     const layers = document.querySelectorAll('.layer');
@@ -45,11 +42,7 @@ function App() {
       });
       clearInterval(brainInterval);
     };
-  }, [currentView]);
-
-  if (currentView === 'dashboard') {
-    return <Dashboard />;
-  }
+  }, []);
 
   return (
     <div className="container">
@@ -57,22 +50,6 @@ function App() {
         <h1 className="title">🧠 DAODISEO AI BRAIN</h1>
         <p className="subtitle">Revolutionary 5-Layer Architecture for Conversational Real World Assets</p>
         <div className="methodology-badge">⚡ 4-Day Methodology Implementation</div>
-        
-        {/* Navigation */}
-        <div className="navigation">
-          <button 
-            className={`nav-btn ${currentView === 'architecture' ? 'active' : ''}`}
-            onClick={() => setCurrentView('architecture')}
-          >
-            🧠 Architecture
-          </button>
-          <button 
-            className={`nav-btn ${currentView === 'dashboard' ? 'active' : ''}`}
-            onClick={() => setCurrentView('dashboard')}
-          >
-            📊 Dashboard
-          </button>
-        </div>
       </div>
       
       <div className="architecture-grid">
@@ -182,159 +159,6 @@ function App() {
               • Future Integrations
             </div>
           </div>
-        </div>
-      </div>
-      
-      <div className="rwa-digital-twins-section">
-        <div className="rwa-hero">
-          <h2 className="rwa-title">Build RWA Digital Twins Together</h2>
-          <p className="rwa-description">
-            DAODISEO connects all stakeholders in revolutionizing real estate development through a 
-            blockchain-powered ecosystem. Simply upload files and links to collaboratively build 
-            comprehensive digital twins following the highest industry standards.
-          </p>
-          
-          <div className="rwa-cta-buttons">
-            <button 
-              className="rwa-btn rwa-btn-primary"
-              onClick={() => setCurrentView('dashboard')}
-            >
-              📤 Upload & Start Building
-            </button>
-            <button className="rwa-btn rwa-btn-secondary">
-              🔍 Explore Digital Twins
-            </button>
-          </div>
-        </div>
-        
-        <div className="stakeholder-ecosystem">
-          <div className="stakeholder-circle stakeholder-developers">
-            <div className="stakeholder-icon">🏗️</div>
-            <div className="stakeholder-label">Developers</div>
-          </div>
-          
-          <div className="stakeholder-circle stakeholder-tenants-buyers">
-            <div className="stakeholder-icon">🏠</div>
-            <div className="stakeholder-label">Tenants/Buyers</div>
-          </div>
-          
-          <div className="stakeholder-circle stakeholder-brokers-eco">
-            <div className="stakeholder-icon">🤝</div>
-            <div className="stakeholder-label">Brokers</div>
-          </div>
-          
-          <div className="central-digital-twin">
-            <div className="central-icon">🏢</div>
-            <div className="central-title">Digital Twin</div>
-            <div className="central-subtitle">Collaborative Building</div>
-          </div>
-          
-          <div className="stakeholder-circle stakeholder-landlords-eco">
-            <div className="stakeholder-icon">🏨</div>
-            <div className="stakeholder-label">Landlords</div>
-          </div>
-          
-          <div className="stakeholder-circle stakeholder-mortgage-eco">
-            <div className="stakeholder-icon">🏦</div>
-            <div className="stakeholder-label">Mortgage Brokers</div>
-          </div>
-          
-          <div className="stakeholder-circle stakeholder-appraisers-eco">
-            <div className="stakeholder-icon">📊</div>
-            <div className="stakeholder-label">Appraisers</div>
-          </div>
-          
-          <div className="stakeholder-circle stakeholder-investors-eco">
-            <div className="stakeholder-icon">💰</div>
-            <div className="stakeholder-label">Investors</div>
-          </div>
-          
-          <div className="stakeholder-circle stakeholder-managers-eco">
-            <div className="stakeholder-icon">🔧</div>
-            <div className="stakeholder-label">Property Managers</div>
-          </div>
-        </div>
-      </div>
-      
-      <div className="stakeholder-intelligence-section">
-        <h3 className="stakeholder-title">
-          🎯 7 Stakeholder Perspectives - Multi-Intelligence Architecture
-        </h3>
-        <p className="stakeholder-subtitle">
-          DAODISEO AI Brain understands WHO is asking and tailors responses accordingly
-        </p>
-        
-        <div className="stakeholder-grid">
-          <div className="stakeholder-item stakeholder-tenants">
-            <div className="stakeholder-icon">🏠</div>
-            <h4>Tenants/Buyers</h4>
-            <div className="stakeholder-need">Seamless digital property search + customizable filters</div>
-            <div className="stakeholder-example">"Show me 2-bedroom apartments under $2000 with gym access"</div>
-          </div>
-          
-          <div className="stakeholder-item stakeholder-brokers">
-            <div className="stakeholder-icon">🤝</div>
-            <h4>Brokers</h4>
-            <div className="stakeholder-need">Centralized communication + automated prospecting</div>
-            <div className="stakeholder-example">"Generate marketing package for luxury condo with ROI projections"</div>
-          </div>
-          
-          <div className="stakeholder-item stakeholder-landlords">
-            <div className="stakeholder-icon">🏢</div>
-            <h4>Landlords</h4>
-            <div className="stakeholder-need">Tenant relationship management + portfolio optimization</div>
-            <div className="stakeholder-example">"What's the maintenance status across my 15 properties?"</div>
-          </div>
-          
-          <div className="stakeholder-item stakeholder-managers">
-            <div className="stakeholder-icon">🔧</div>
-            <h4>Property Managers</h4>
-            <div className="stakeholder-need">Efficient management tools + tenant communication</div>
-            <div className="stakeholder-example">"Schedule HVAC maintenance for Building A and notify tenants"</div>
-          </div>
-          
-          <div className="stakeholder-item stakeholder-mortgage">
-            <div className="stakeholder-icon">🏦</div>
-            <h4>Mortgage Brokers</h4>
-            <div className="stakeholder-need">Lender-borrower alignment + documentation</div>
-            <div className="stakeholder-example">"Match this client profile with optimal loan products"</div>
-          </div>
-          
-          <div className="stakeholder-item stakeholder-appraisers">
-            <div className="stakeholder-icon">📊</div>
-            <h4>Appraisers</h4>
-            <div className="stakeholder-need">Simplified mobile property valuation</div>
-            <div className="stakeholder-example">"Generate comparable analysis for 123 Main St property"</div>
-          </div>
-          
-          <div className="stakeholder-item stakeholder-investors">
-            <div className="stakeholder-icon">💰</div>
-            <h4>Investors</h4>
-            <div className="stakeholder-need">Financial analysis + portfolio management</div>
-            <div className="stakeholder-example">"What's my total portfolio ROI and which properties need attention?"</div>
-          </div>
-        </div>
-        
-        <div className="intelligent-response-demo">
-          <h4 className="demo-title">🧠 Intelligent Context-Aware Responses</h4>
-          <div className="demo-scenario">
-            <div className="demo-question">"How is Building A performing?"</div>
-            <div className="demo-responses">
-              <div className="demo-response investor">
-                <strong>💰 Investor:</strong> "Building A: 95% occupancy, $12K monthly income, 8.5% ROI, recommend upgrading units 3-4"
-              </div>
-              <div className="demo-response manager">
-                <strong>🔧 Property Manager:</strong> "Building A: 2 maintenance requests pending, HVAC service due next week, tenant satisfaction 4.2/5"
-              </div>
-              <div className="demo-response broker">
-                <strong>🤝 Broker:</strong> "Building A: Market value $2.1M, comparable sales trending +5%, great listing potential"
-              </div>
-            </div>
-          </div>
-        </div>
-        
-        <div className="stakeholder-value-proposition">
-          <strong>🚀 Revolutionary Value: One AI Brain = 7x Specialized Intelligence for Every Real Estate Professional</strong>
         </div>
       </div>
       
