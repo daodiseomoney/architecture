@@ -1,51 +1,11 @@
 import { useEffect, useState } from 'react';
 import './App.css';
-
-// Simple Dashboard component inline to avoid import issues
-const Dashboard = () => {
-  return (
-    <div style={{ 
-      minHeight: '100vh', 
-      background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
-      padding: '20px',
-      color: 'white',
-      display: 'flex',
-      alignItems: 'center',
-      justifyContent: 'center',
-      flexDirection: 'column'
-    }}>
-      <h1 style={{ fontSize: '3rem', marginBottom: '20px' }}>🚀 DAODISEO Dashboard</h1>
-      <p style={{ fontSize: '1.2rem', opacity: 0.9, textAlign: 'center', maxWidth: '600px' }}>
-        Advanced dashboard coming soon! This will be your central hub for managing RWA Digital Twins, 
-        stakeholder collaboration, and AI-powered insights.
-      </p>
-      <div style={{ 
-        marginTop: '30px',
-        padding: '20px',
-        background: 'rgba(255, 255, 255, 0.1)',
-        borderRadius: '15px',
-        backdropFilter: 'blur(20px)'
-      }}>
-        <h3 style={{ color: '#ffd700', marginBottom: '15px' }}>🎯 Coming Features:</h3>
-        <ul style={{ listStyle: 'none', padding: 0 }}>
-          <li style={{ marginBottom: '8px' }}>🏗️ Real Estate Project Management</li>
-          <li style={{ marginBottom: '8px' }}>🤖 AI-Powered Building Insights</li>
-          <li style={{ marginBottom: '8px' }}>👥 Multi-Stakeholder Collaboration</li>
-          <li style={{ marginBottom: '8px' }}>💬 Conversational Asset Interface</li>
-          <li style={{ marginBottom: '8px' }}>📊 Real-Time Analytics & Reporting</li>
-        </ul>
-      </div>
-    </div>
-  );
-};
+import Dashboard from './Dashboard';
 
 function App() {
-  const [currentView, setCurrentView] = useState('architecture');
+  const [currentView, setCurrentView] = useState<'architecture' | 'dashboard'>('architecture');
 
   useEffect(() => {
-    // Only run interactive elements for architecture view
-    if (currentView !== 'architecture') return;
-
     // Interactive elements for layers
     const layers = document.querySelectorAll('.layer');
     
@@ -241,10 +201,7 @@ function App() {
             >
               📤 Upload & Start Building
             </button>
-            <button 
-              className="rwa-btn rwa-btn-secondary"
-              onClick={() => setCurrentView('dashboard')}
-            >
+            <button className="rwa-btn rwa-btn-secondary">
               🔍 Explore Digital Twins
             </button>
           </div>
