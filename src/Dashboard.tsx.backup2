@@ -92,12 +92,12 @@ const Dashboard: React.FC<DashboardProps> = ({ onBackToArchitecture }) => {
       },
       {
         id: '3',
-        type: 'info',
-        title: 'Service Warmup Implemented',
-        description: 'Cold start delays resolved via WSL warmup script automation',
-        solution: 'Future migration to Render paid plan for premium reliability',
-        timeline: 'Completed',
-        priority: 'low'
+        type: 'warning',
+        title: 'Cold Start Service Delays',
+        description: 'Render free tier sleeps services causing 20-30s delays',
+        solution: 'GitHub Action warmup automation',
+        timeline: '12 hours',
+        priority: 'medium'
       }
     ]);
 
