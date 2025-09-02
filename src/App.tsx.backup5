@@ -1,6 +1,43 @@
 import { useEffect, useState } from 'react';
 import './App.css';
-import Dashboard from './Dashboard';
+
+// Simple Dashboard component inline to avoid import issues
+const Dashboard = () => {
+  return (
+    <div style={{ 
+      minHeight: '100vh', 
+      background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
+      padding: '20px',
+      color: 'white',
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center',
+      flexDirection: 'column'
+    }}>
+      <h1 style={{ fontSize: '3rem', marginBottom: '20px' }}>🚀 DAODISEO Dashboard</h1>
+      <p style={{ fontSize: '1.2rem', opacity: 0.9, textAlign: 'center', maxWidth: '600px' }}>
+        Advanced dashboard coming soon! This will be your central hub for managing RWA Digital Twins, 
+        stakeholder collaboration, and AI-powered insights.
+      </p>
+      <div style={{ 
+        marginTop: '30px',
+        padding: '20px',
+        background: 'rgba(255, 255, 255, 0.1)',
+        borderRadius: '15px',
+        backdropFilter: 'blur(20px)'
+      }}>
+        <h3 style={{ color: '#ffd700', marginBottom: '15px' }}>🎯 Coming Features:</h3>
+        <ul style={{ listStyle: 'none', padding: 0 }}>
+          <li style={{ marginBottom: '8px' }}>🏗️ Real Estate Project Management</li>
+          <li style={{ marginBottom: '8px' }}>🤖 AI-Powered Building Insights</li>
+          <li style={{ marginBottom: '8px' }}>👥 Multi-Stakeholder Collaboration</li>
+          <li style={{ marginBottom: '8px' }}>💬 Conversational Asset Interface</li>
+          <li style={{ marginBottom: '8px' }}>📊 Real-Time Analytics & Reporting</li>
+        </ul>
+      </div>
+    </div>
+  );
+};
 
 function App() {
   const [currentView, setCurrentView] = useState('architecture');
@@ -51,7 +88,7 @@ function App() {
   }, [currentView]);
 
   if (currentView === 'dashboard') {
-    return <Dashboard onBackToArchitecture={() => setCurrentView('architecture')} />;
+    return <Dashboard />;
   }
 
   return (
@@ -73,7 +110,7 @@ function App() {
             className={`nav-btn ${currentView === 'dashboard' ? 'active' : ''}`}
             onClick={() => setCurrentView('dashboard')}
           >
-            📊 Development Status
+            📊 Dashboard
           </button>
         </div>
       </div>
@@ -119,7 +156,7 @@ function App() {
           <div className="tech-stack">
             <div className="tech-item">🧠 Anthropic Claude<br />Haiku → Sonnet</div>
             <div className="tech-item">📚 Advanced RAG<br />GraphRAG + Hybrid</div>
-            <div className="tech-item">📄 Multi-DB Strategy<br />SQL + Graph + Vector</div>
+            <div className="tech-item">🔄 Multi-DB Strategy<br />SQL + Graph + Vector</div>
             <div className="tech-item">🎨 AI Frameworks<br />Langchain + Neo4j</div>
           </div>
           
@@ -202,13 +239,13 @@ function App() {
               className="rwa-btn rwa-btn-primary"
               onClick={() => setCurrentView('dashboard')}
             >
-              📊 View Development Status
+              📤 Upload & Start Building
             </button>
             <button 
               className="rwa-btn rwa-btn-secondary"
               onClick={() => setCurrentView('dashboard')}
             >
-              🔍 Monitor Platform Progress
+              🔍 Explore Digital Twins
             </button>
           </div>
         </div>
@@ -410,25 +447,6 @@ function App() {
         <p><strong>Proven Methodology • Expert Collaboration • Multi-Stakeholder Intelligence • Revolutionary Results</strong></p>
         <div className="collaboration-highlight">
           <strong>✅ Business Vision (Free Man) + Technical Excellence (Pavel) + 4-Day Execution (Maksim) = Legendary Platform</strong>
-        </div>
-        
-        {/* Current Status Footer Update */}
-        <div className="current-status-footer">
-          <div className="status-title">📊 Current Platform Status (September 2025)</div>
-          <div className="status-grid">
-            <div className="status-item working">
-              <span className="status-badge">✅ OPERATIONAL</span>
-              <span className="status-text">Revolutionary "Talk to Buildings" platform with 4 microservices live</span>
-            </div>
-            <div className="status-item fixing">
-              <span className="status-badge">🔧 FIXING</span>
-              <span className="status-text">Database persistence implementation to eliminate 404 session errors</span>
-            </div>
-            <div className="status-item expanding">
-              <span className="status-badge">🚀 EXPANDING</span>
-              <span className="status-text">NFT gamification + advanced BIM features ready for development</span>
-            </div>
-          </div>
         </div>
       </div>
     </div>
