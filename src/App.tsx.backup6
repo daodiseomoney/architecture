@@ -394,8 +394,8 @@ function App() {
         </div>
         <div className="benefit">
           <div className="benefit-icon">💰</div>
-          <div className="benefit-title">Efficient Execution</div>
-          <div>Production-ready platform with real working features</div>
+          <div className="benefit-title">Cost Efficient</div>
+          <div>$255 vs $258,000 traditional quotes</div>
         </div>
         <div className="benefit">
           <div className="benefit-icon">🏗️</div>
@@ -418,15 +418,15 @@ function App() {
           <div className="status-grid">
             <div className="status-item working">
               <span className="status-badge">✅ OPERATIONAL</span>
-              <span className="status-text"> Revolutionary "Talk to Buildings" platform with 4 microservices live</span>
+              <span className="status-text">Revolutionary "Talk to Buildings" platform with 4 microservices live</span>
             </div>
             <div className="status-item fixing">
               <span className="status-badge">🔧 FIXING</span>
-              <span className="status-text"> Database persistence implementation to eliminate 404 session errors</span>
+              <span className="status-text">Database persistence implementation to eliminate 404 session errors</span>
             </div>
             <div className="status-item expanding">
               <span className="status-badge">🚀 EXPANDING</span>
-              <span className="status-text"> NFT gamification + advanced BIM features ready for development</span>
+              <span className="status-text">NFT gamification + advanced BIM features ready for development</span>
             </div>
           </div>
         </div>
