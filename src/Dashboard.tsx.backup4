@@ -184,7 +184,7 @@ const Dashboard: React.FC<DashboardProps> = ({ onBackToArchitecture }) => {
               ← Architecture
             </button>
             <div className="header-titles">
-              <h1 className="dashboard-title">DAODISEO Development Status</h1>
+              <h1 className="dashboard-title">📈 DAODISEO Development Status</h1>
               <p className="dashboard-subtitle">Real-Time Platform Progress & Production Issues</p>
             </div>
           </div>
