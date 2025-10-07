@@ -36,6 +36,7 @@ This interactive presentation showcases the **DAODISEO AI Brain** - a groundbrea
 - Bias Prevention & Fairness
 
 ### 2️⃣ Business Layer
+- Business Model
 - 7 Stakeholder Intelligence Roles
 - Context-Aware AI Responses
 - Role-Based Information Delivery
